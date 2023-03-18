@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>blankdisplay.com</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.17.2/firebase-app-compat.js"></script>
+    <script defer src="/__/firebase/init.js"></script>
+
+    <script src="helpers.js"></script>
+    <script defer src="blank.js"></script>
+    <link rel="stylesheet" href="blank.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        
+  </head>
+  <body>
+    <div id="nothing">
+      <div id="welcome">
+        <h1>blank display</h1>
+        check below the fold for more information
+      </div>
+    </div>
+    <dialog id="help-dialog">
+      <div>
+        <h2>What's it for?</h2>
+        <p>
+          Blank Display is intended to provide helpful features for the setup of interactive web exhibits or displays.
+        </p>
+        <h2>Usage</h2>
+        <h3>Custom Color</h3>
+        <p>
+          You can use a URL parameter to set the background to a custom hex color. 
+          The parameter accepts 3 or 6 character format for hex colors. Do not include the octothorpe (#).
+          <br>
+          <br>
+          <em>example: http://blankdisplay.com?color=32CD32</em>
+        </p>
+        <h3>Hide Welcome Message</h3>
+        <p>
+          The welcome message will automatically fade out over ~7 seconds when it is present. 
+          Include the parameter 'noWelcome' to prevent the welcome message from appearing. <br>
+          <br>
+          <em>example: http://blankdisplay.com?noWelcome&color=fff</em>
+        </p>
+        <h3>Cursor Hiding</h3>
+        <p>
+          The cursor will automatically hide after ~2 seconds and will appear again when it is moved. 
+          Include the parameter 'noCursor' to prevent the cursor from appearing. <br>
+          <br>
+          <em>example: http://blankdisplay.com?noWelcome&noCursor</em>
+        </p>
+      </div>
+      <div class="footer">
+        esc to close
+      </div>
+    </dialog>
+    <div id="footer">
+      <div id="top-line">
+        <div id="attribution">inspired by <a href="https://blankwhitescreen.com/">blankwhitescreen.com</a></div>
+        <div id="help">
+          <span id="help-button" class="clickable"><i class="material-symbols-outlined">help</i></span>
+        </div>
+      </div>
+      <div id="bottom-line">
+        <div>
+          created by <a href="http://creativecontrol.cc">creativecontrol</a>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>

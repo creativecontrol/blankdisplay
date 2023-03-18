@@ -1,0 +1,81 @@
+body {
+    background-color: #222;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+body.light-theme {
+    color: #222;
+}
+
+a:link { color: lightskyblue; }
+a:visited { color: lightskyblue; }
+a:hover { color: lightskyblue; }
+a:active { color: lightskyblue;}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+#nothing {
+    display: inline-flex;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    -webkit-user-select:none;
+    -moz-user-select: -moz-none;
+    -o-user-select:none;
+    user-select: none;
+}
+
+#welcome {
+    display: none;
+}
+
+.peekaboo {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 6s, opacity 6s ease-in;
+}
+
+#help-dialog {
+    background-color: #333;
+    border-color: aliceblue;
+    border-radius: 15px;
+    color: aliceblue;
+    width: 75%;
+}
+
+#help-dialog .footer {
+    display: block;
+    font-size: small;
+    text-align: center;
+    width: 100%;
+}
+
+#footer {
+    font-size: small;
+}
+
+#top-line {
+    align-items: center;
+    display: inline-flex;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+#bottom-line {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+}
+
