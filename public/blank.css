@@ -64,18 +64,10 @@ body::-webkit-scrollbar {
     font-size: small;
 }
 
-#top-line {
+#footer div {
     align-items: center;
     display: inline-flex;
-    gap: 20px;
+    gap: 5px;
     justify-content: center;
     width: 100%;
 }
-
-#bottom-line {
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-    width: 100%;
-}
-
